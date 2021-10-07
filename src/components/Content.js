@@ -1,3 +1,8 @@
+import Bus from "../assets/im/bus2.png";
+import View from "../assets/im/view.jpg";
+import Designer from "../assets/im/designer.png";
+import Painter from "../assets/im/painter.png";
+
 export default function Content() {
     return (
         <content>
@@ -58,13 +63,13 @@ export default function Content() {
                         台中市公車303路行駛港區藝術中心到新民高中，主要行經清水區鰲峰路、清水區中山路、沙鹿區中山路及台灣大道，由統聯客運營運。本路線於台灣大道行駛公車專用道，為重要市公車路線之一，與台中市公車304路路線大略相同。<br />
                         全程行車里數約28.0公里，全程行車時間約1小時40分鐘。往新民高中共57站，往港區藝術中心共60站。<br />
                         本路線從港區藝術中心起，沿著清水區鎮政路、鰲峰路、清水區中山路、沙鹿區中山路、光大路、光華路、臺灣大道、中區中山路、建國路、雙十路、精武路、三民路、崇德路及健行路至新民高中。
-                        <img className="imbus" src="im/bus2.png" alt="" />
+                        <img className="imbus" src={Bus} alt="" />
                     </div>
                 </div>
             </div>
             <div id="RECOMMEND" className="RECOMMEND">
                 <div className="massage-im">
-                    <img src="im/view.jpg" alt="" />
+                    <img src={View} alt="" />
                 </div>
                 <div className="message">
                     <div className="top_title top_title_REC">
@@ -106,7 +111,7 @@ export default function Content() {
                         </div>
                     </div>
                     <div className="person_right">
-                        <img src="im/designer.png" alt="" />
+                        <img src={Designer} alt="" />
                     </div>
                 </div>
                 <div className="person">
@@ -128,7 +133,7 @@ export default function Content() {
                         </a>
                     </div>
                     <div className="person_right">
-                        <img src="im/painter.png" alt="" />
+                        <img src={Painter} alt="" />
                     </div>
                 </div>
             </div>

@@ -1,24 +1,36 @@
+import Cloud1 from "../assets/im/cloud1.png";
+import Cloud2 from "../assets/im/cloud2.png";
+import Cloud3 from "../assets/im/cloud3.png";
+import Cloud4 from "../assets/im/cloud4.png";
+import Cloud5 from "../assets/im/cloud5.png";
+import Background from "../assets/im/background.png";
+import Background2 from "../assets/im/background2.png";
+import Top from "../assets/im/top.png";
+import Bottom from "../assets/im/bottom.png";
+import Van from "../assets/im/van.png";
+import Map from "../assets/im/map.png";
+
 export default function Header() {
     return (
         <header id="HOME">
             <div className="im">
-                <img className="cl cl1" src="im/cloud1.png" />
-                <img className="cl cl2" src="im/cloud2.png" />
-                <img className="cl cl3" src="im/cloud3.png" />
-                <img className="cl cl4" src="im/cloud4.png" />
-                <img className="cl cl5" src="im/cloud5.png" />
-                <img className="bg" src="im/background.png" />
+                <img className="cl cl1" src={Cloud1} />
+                <img className="cl cl2" src={Cloud2} />
+                <img className="cl cl3" src={Cloud3} />
+                <img className="cl cl4" src={Cloud4} />
+                <img className="cl cl5" src={Cloud5} />
+                <img className="bg" src={Background} />
                 <div className="wheel">
-                    <img className="tp" src="im/top.png" />
-                    <img className="bt" src="im/bottom.png" />
+                    <img className="tp" src={Top} />
+                    <img className="bt" src={Bottom} />
                 </div>
-                <img className="bg bg2" src="im/background2.png" />
-                <img className="van" src="im/van.png" />
+                <img className="bg bg2" src={Background2} />
+                <img className="van" src={Van} />
             </div>
             <div className="menu">
                 <input className="menu-check" type="checkbox" id="menu-check" />
                 <label className="menu-open-button" for="menu-check">
-                    <img className="menu-img" src="im/map.png" />
+                    <img className="menu-img" src={Map} />
                     <div className="menu-text">Taichung <br />BRT | 303 | BUS</div>
                 </label>
                 <a className="menu-item menu-item1" href="#HOME">
