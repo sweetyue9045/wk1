@@ -487,6 +487,285 @@ nav {
     display: flex;
 }
 
+/* 介紹 */
+
+.INTRO {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 450px;
+    background-color: #fcfaf0;
+}
+
+.top_box_INTRO {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top_bottom_INTRO {
+    top: 40px;
+    left: calc(50% - 73px);
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.INTRO_content {
+    width: 80%;
+    margin: auto;
+}
+
+.intro_tab {
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 21px;
+    color: #000;
+    padding: 0 0 5px 0;
+    display: flex;
+}
+
+.intro_tab li {
+    list-style-type: none;
+    padding: 0px 20px 5px 20px;
+}
+
+.tab_title {
+    border-bottom: solid 4px rgba(31, 175, 135, 0);
+    cursor: pointer;
+}
+
+.choose {
+    color: #1FAF87;
+    transition: all .4s ease-in-out;
+    border-bottom: solid 4px rgba(31, 175, 135, 0.8);
+}
+
+.intro_content_box {
+    height: 320px;
+    overflow: auto;
+    padding: 0px 20px;
+    display: none;
+}
+
+.showbox {
+    display: block;
+}
+
+#outbox1 {
+    column-count: 3;
+    column-gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+#outbox2 {
+    column-count: 2;
+    column-gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+#content_box {
+    width: 100%;
+    display: inline-block;
+    border: 10px solid #fff;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 5px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro_im {
+    position: relative;
+}
+
+.intro_carousel {
+    position: relative;
+    user-select: none;
+    display: flex;
+}
+
+.intro_carousel img {
+    width: 100%;
+}
+
+.chevron {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.intro_im:hover .chevron {
+    opacity: 1;
+}
+
+.chevron button {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.chevron button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+}
+
+.carousel-dots {
+    width: 30px;
+    height: 3px;
+    margin: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dotschoose {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.intro_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.intro_title {
+    color: #000;
+    position: relative;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.intro_text {
+    line-height: 20px;
+    position: relative;
+    font-size: 12px;
+    color: #000;
+}
+
+.intro_mine {
+    margin-top: 5px;
+    border-top: 1px dashed #ccc;
+    padding: 5px 0 0 0;
+    line-height: 20px;
+    position: relative;
+    font-size: 12px;
+    color: #000;
+}
+
+#BUILDING .intro_im {
+    width: 100%;
+    height: auto;
+}
+
+#FOOD #content_box {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+#FOOD .intro_content {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+#FOOD img {
+    position: relative;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+#FOOD .intro_title {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    font-size: 17px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+}
+
+#FOOD .intro_text {
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+    padding: 10px 20px 10px;
+    text-align: center;
+    width: 100%;
+    top: 200px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+#FOOD .intro_a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    top: 300px;
+}
+
+#FOOD .intro_a a {
+    color: rgb(0, 0, 0);
+}
+
+#FOOD #content_box:hover img {
+    transform: scale(1.1);
+}
+
+#FOOD #content_box:hover .intro_content {
+    opacity: 1;
+}
+
+#FOOD #content_box:hover .intro_title {
+    opacity: 1;
+}
+
+#FOOD #content_box:hover .intro_text {
+    opacity: 1;
+    top: 0%;
+    transition-delay: 0.1s;
+}
+
+#FOOD #content_box:hover .intro_a {
+    opacity: 1;
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+#FOOD .intro_a i {
+    transform: scale(1.3, 1.3);
+}
+
+#FOOD #content_box:hover .intro_a i:hover {
+    transform: scale(1.6, 1.6);
+}
+
 /* 留言板 */
 
 .RECOMMEND {
